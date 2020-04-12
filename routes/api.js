@@ -9,8 +9,8 @@ router.get("/giph", (req, res, next) => {
     .catch(next);
 });
 
-router.post("/saveIt", (req, res, next) => {
-  console.log("check this out", req.body);
+router.post("/giph", (req, res, next) => {
+  console.log("coolstuffs", req.body);
 
   Giphmod.create(req.body)
     .then(data => res.json(data))

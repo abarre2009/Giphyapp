@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from "./components/Homepage";
+import Saved from "./components/Saved";
 // import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -11,7 +12,7 @@ const App = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={HomePage} />
-        {/* <Route exact path="/saved" component={Saved} /> */}
+        <Route exact path="/saved" component={Saved} />
         {/* <Route component={NoMatch} /> */}
       </Switch>
     </Router>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Input from "./Input";
-import ListItems from "./ListItems";
+import Saved from "./Saved";
 
 function Giphy() {
   const [items, setItems] = useState([]);
@@ -36,7 +36,7 @@ function Giphy() {
     <div>
       <h1>Environmental List</h1>
       <Input getItems={getItems} />
-      <ListItems items={items} deleteItem={deleteItem} />
+      <Saved items={items} deleteItem={deleteItem} />
     </div>
   );
 }

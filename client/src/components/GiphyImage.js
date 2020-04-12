@@ -1,11 +1,11 @@
 import React from "react";
-//import api from "../utils/api";
+// import api from "../utils/api";
 import axios from "axios";
-
+// import saved from "./Saved";
 class GiphyImage extends React.Component {
   saveGiphy = () => {
     axios
-      .post("/api/saveIt", {
+      .post("/api/giph", {
         id: this.props.imageId,
         url: this.props.imageUrl
       })
@@ -20,7 +20,7 @@ class GiphyImage extends React.Component {
           src={this.props.imageUrl}
           height={200}
           width={400}
-          alt={"check this"}
+          alt={"check this giph"}
         />
         <button onClick={this.saveGiphy}>save</button>
       </div>

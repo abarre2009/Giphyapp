@@ -11,6 +11,6 @@ const giphSchema = new Schema({
   }
 });
 
-const Giph = mongoose.model("Giph", giphSchema);
+const Giph = mongoose.model("giphs", giphSchema);
 
 module.exports = Giph;
