@@ -31,6 +31,7 @@ class Saved extends Component {
     return (
       <div>
         <img
+          key={res._id}
           src={this.getSavedGiphs}
           height={200}
           width={400}
